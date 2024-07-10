@@ -1,4 +1,5 @@
 # Datatype
+
 *** Java supports various data types, which are broadly classified into two categories: primitive data types and reference data types. ***
 
 ## Primitive Data Types
