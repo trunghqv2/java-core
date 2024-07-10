@@ -1,6 +1,10 @@
 # Datatype
 
+<<<<<<< HEAD
 **Java supports various data types, which are broadly classified into two categories: primitive data types and reference data types.**
+=======
+ Java supports various data types, which are broadly classified into two categories: primitive data types and reference data types. 
+>>>>>>> 638fd8589b4016aa0a9d25d2bc2f18b95b7d03cc
 
 ## Primitive Data Types
 ### 1. boolean:
