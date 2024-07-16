@@ -2,18 +2,20 @@
 
 In Java, there are various ways to compare values and objects. These include comparing primitive values, strings, and objects.
 
-## Comparing Primitive Values
-Primitive values like int, float, double, char, etc., can be compared using comparison operators: ==, !=, <, >, <=, >=.
+##  So sánh số nguyên và kiểu dữ liệu nguyên thủy khác
 
-## Comparing Strings
-Strings in Java are objects and should not be compared using == as == checks if two object references point to the same object. Instead, you should use the equals() or compareTo() method.
+Các kiểu dữ liệu nguyên thủy như int, float, double, char có thể được so sánh trực tiếp bằng các toán tử so sánh như ==, !=, <, >, <=, >=.
+##  So sánh chuỗi (String)
 
+Trong Java, String là một lớp đặc biệt và không thể so sánh trực tiếp bằng toán tử == để kiểm tra nội dung của chuỗi. Thay vào đó, sử dụng phương thức equals hoặc compareTo.
 equals(): Compares the content of two strings.
 compareTo(): Compares two strings lexicographically.
 
-## Comparing Objects
-To compare objects, you can use the equals() method that is overridden from the Object class, or use the Comparable and Comparator interfaces.
+##  So sánh đối tượng (Object)
 
-equals(): By default, this method compares references. You should override this method to compare the content of objects.
-Comparable: This interface has the compareTo() method to define the natural ordering of objects.
-Comparator: This interface has the compare() method to define custom ordering of objects.
+Để so sánh các đối tượng tùy chỉnh, cần ghi đè phương thức equals và hashCode. Thêm vào đó, có thể sử dụng giao diện Comparable hoặc Comparator để so sánh đối tượng.
+
+
+Sử dụng == để so sánh các kiểu nguyên thủy và so sánh tham chiếu.
+Sử dụng equals để so sánh nội dung chuỗi và các đối tượng.
+Ghi đè compareTo hoặc sử dụng Comparator để định nghĩa thứ tự sắp xếp cho các đối tượng tùy chỉnh.

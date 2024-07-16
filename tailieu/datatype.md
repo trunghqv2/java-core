@@ -1,47 +1,37 @@
 # Datatype
 
- Java supports various data types, which are broadly classified into two categories: primitive data types and reference data types. 
+*** Java là một ngôn ngữ được định kiểu tĩnh. Cơ sở của bất kỳ ngôn ngữ lập trình nào là các kiểu dữ liệu và toán tử của nó. Java đi kèm với một tập hợp phong phú của cả kiểu dữ liệu và toán tử, điều này làm cho nó phù hợp với bất kỳ kiểu lập trình nào. Có hai loại kiểu dữ liệu trong Java: *** 
 
-## Primitive Data Types
-### 1. boolean:
+## 1. Các kiểu dữ liệu nguyên thủy
 
-Size: ~1 bit (depends on JVM)
-Values: true or false
-### 2. byte:
+Thuật ngữ kiểu dữ liệu không nguyên thủy có nghĩa là các kiểu này chứa “địa chỉ bộ nhớ của biến”.
 
-Size: 8 bits
-Values: -128 to 127
-### 3. short:
+### Interger:
 
-Size: 16 bits
-Values: -32,768 to 32,767
-### 4. int:
+    - byte:  Size: 8 byte (Values: -128 to 127)
 
-Size: 32 bits
-Values: -2^31 to 2^31-1
-### 5. long:
+    - short: Size: 16 byte (Values: -32,768 to 32,767)
 
-Size: 64 bits
-Values: -2^63 to 2^63-1
-### 6. float:
+    - int: Size: 32 byte (Values: -2^31 to 2^31-1)
 
-Size: 32 bits
-Values: IEEE 754 floating-point
-### 7. double:
+    - long: Size: 64 byte  (Values: -2^63 to 2^63-1)
 
-Size: 64 bits
-Values: IEEE 754 floating-point
-### 8. char:
+### Float-Point:
 
-Size: 16 bits
-Values: '\u0000' (or 0) to '\uffff' (or 65,535)
-## Reference Data Types
-Class Objects: Created using class definitions. Examples include String, Scanner, Random, custom classes, etc.
+    - float: Size: 32 byte
 
-Example: String name = "John";
-Arrays: A container object that holds a fixed number of values of a single type.
+    - double: Size: 64 byte
 
-Example: int[] numbers = {1, 2, 3, 4, 5};
-Interfaces: Used to implement abstraction, a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types.
+###  char:
 
-Example: Runnable r = new MyRunnable();
+    Kiểu dữ liệu này có thể dùng để lưu kí tự hoặc số nguyên không âm, có kích thước 2 byte
+
+### boolean:
+
+    Size: 1 byte (mặc định false)
+
+## 2. Kiểu dữ liệu không nguyên thủy
+
+Các kiểu dữ liệu không nguyên thủy không tự lưu trữ giá trị mà chúng lưu trữ một tham chiếu hoặc địa chỉ (vị trí bộ nhớ) của giá trị đó.
+
+Examples include String, Object , Random, custom classes, etc.

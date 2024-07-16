@@ -1,17 +1,14 @@
 # Object
+Lớp này có cái tên là Object, nó là một lớp được hệ thống tạo ra sẵn, và hệ thống cũng chỉ định nó là lớp cha cao nhất của tất cả các lớp trong Java.
+## 1. Thuộc tính (Attributes/Properties/Fields):
+Thuộc tính lưu trữ trạng thái của một đối tượng.
+Ví dụ: Một đối tượng Person (Người) có thể có các thuộc tính như name (tên), age (tuổi), và address (địa chỉ).
 
-In Java, an object is a real-world entity that represents a specific instance of a class. Objects have states and behaviors. The state of an object is stored in fields (variables), while methods (functions) define the object's behavior. Objects are the fundamental building blocks of object-oriented programming (OOP) in Java.
+## 2. Phương thức (Methods):
+Phương thức định nghĩa hành vi của một đối tượng và có thể thao tác trên trạng thái của nó.
+Ví dụ: Một đối tượng Person (Người) có thể có các phương thức như walk() (đi bộ), talk() (nói chuyện), và displayInfo() (hiển thị thông tin).
 
-## Key Components of an Object
-### 1. Attributes (Properties/Fields):
-
-Attributes store the state of an object.
-Example: A Person object might have attributes like name, age, and address.
-### 2. Methods:
-
-Methods define the behavior of an object and can manipulate its state.
-Example: A Person object might have methods like walk(), talk(), and displayInfo().
-## Characteristics of Objects
-State: The state is represented by the attributes of the object.
-Behavior: The behavior is defined by the methods of the object.
-Identity: Each object has a unique identity, which is typically managed by the memory address at which the object is stored.
+## Đặc điểm của Đối tượng
+Trạng thái (State): Trạng thái được đại diện bởi các thuộc tính của đối tượng.
+Hành vi (Behavior): Hành vi được định nghĩa bởi các phương thức của đối tượng.
+Danh tính (Identity): Mỗi đối tượng có một danh tính duy nhất, thường được quản lý bởi địa chỉ bộ nhớ mà đối tượng đó được lưu trữ.

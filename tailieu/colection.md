@@ -1,26 +1,35 @@
 # Collection in Java
-In Java, a collection refers to a group of objects that are stored and managed collectively. The Collection Framework in Java provides interfaces and classes to manipulate groups of objects easily and efficiently. Here are some fundamental concepts about Collection in Java:
+
+là một root interface trong hệ thống cấp bậc Collection. Java Collection cung cấp nhiều interface (Set, List, Queue, Deque vv) và các lớp (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet vv).
 
 ## Basic Interfaces
-Collection Interface: This is the root interface for all collection types in Java. It provides fundamental methods such as add(), remove(), contains(), isEmpty(), etc.
+Collection interface cũng chứa một số các methods quan trọng để thao tác với dữ liệu tập hợp như add, delete, clear, size hay contains. List, Queue, Set là những sub-interfaces chính của Collection..
 
-List Interface: Represents an ordered collection that allows duplicate elements. Implementing classes include ArrayList, LinkedList, Vector.
+### List Interface:
 
-Set Interface: Represents a collection that does not allow duplicate elements. Implementing classes include HashSet, LinkedHashSet, TreeSet.
+Đây là interface con cua Collection Interface, dành cho dữ liệu kiểu list. List trong Java đại diện cho một danh sách các phần tử có thứ tự và cho phép chứa các phần tử trùng lặp
 
-Map Interface: Represents a collection of key-value pairs where each key is unique. Implementing classes include HashMap, LinkedHashMap, TreeMap.
+### Set Interface: 
 
-Queue Interface: Represents a collection designed for holding elements prior to processing. Implementing classes include LinkedList, PriorityQueue.
+Set Interface đại diện cho một tập hợp các phần tử duy nhất (không trùng lặp). Tuy nhiên, nó, không đảm bảo thứ tự phần tử (trừ LinkedHashSet) có nghĩa là các phần tử được thêm vào Set có thể được sắp xếp theo bất kỳ thứ tự nào.Các lớp triển khai phổ biến của Set là HashSet, LinkedHashSet và TreeSet.
 
-## Commonly Used Implementations
-1. ArrayList: Resizable array implementation of the List interface.
-2. LinkedList: Doubly linked list implementation of the List interface.
-3. HashSet: Implements the Set interface using a hash table.
-4. HashMap: Implements the Map interface using a hash table.
-5. TreeSet: Implements the Set interface using a sorted tree structure.
-6. TreeMap: Implements the Map interface using a red-black tree.
-## Characteristics of Collection Framework
-Generic: Supports generics to ensure type safety.
-Iterating: Provides iterators and enhanced for-loop for traversing elements.
-Algorithms: Offers algorithms for common operations like sorting and searching.
-Concurrency: Provides synchronized collections for thread-safe operations in concurrent environments.                         
+### Map Interface: 
+
+Map InterfaceKhông kế thừa từ Collection Interface, nhưng là một thành phần quan trọng trong Collections Framework. Nó lưu trữ dữ liệu dưới dạng các cặp key-value, trong đó mỗi key là duy nhất và truy xuất dữ liệu dựa trên key đó. Các lớp triển khai phổ biến của Map là HashMap, LinkedHashMap và TreeMap.
+
+### Queue Interface: 
+
+Queue interface duy trì thứ tự FIFO (First In First Out) tương tự như hàng đợi thực tế. Interface này dành cho việc lưu trữ tất cả các phần tử mà thứ tự của các phần tử đó quan trọng, nghĩa là các phần tử được thêm vào đầu tiên sẽ được xử lý đầu tiên. Các lớp triển khai phổ biến của Queue là LinkedList, PriorityQueue và ArrayBlockingQueue.
+
+
+## Các lớp triển khai phổ biến
+1. ArrayList: Thích hợp cho việc truy cập ngẫu nhiên và thêm phần tử vào cuối danh sách.
+2. LinkedList: Thích hợp cho việc thêm và xóa phần tử ở đầu và cuối danh sách hơn so với ArrayList
+3. HashSet:
+Lưu trữ các phần tử duy nhất (không trùng lặp).
+Không đảm bảo thứ tự phần tử.
+Thích hợp cho việc kiểm tra tính duy nhất của phần tử và thao tác tập hợp.
+4. HashMap: Thích hợp cho việc tra cứu và thao tác dữ liệu dựa trên khóa
+5. TreeSet: Thích hợp cho việc kiểm tra tính duy nhất của phần tử và thao tác tập hợp có thứ tự.
+6. TreeMap: Thích hợp cho việc tra cứu và thao tác dữ liệu dựa trên khóa.
+                     
