@@ -1,6 +1,8 @@
 # String
 
+***
 Một đối tượng String là chuỗi ký tự dùng để lưu dữ các ký tự theo một dãy có thứ tự, số ký tự lưu được không hạn chế, có thể biểu diễn chuỗi trên một dòng với các ký tự trong dấu nháy kép "".
+***
 
 Lớp này thực hiện các giao diện Serializablevà CharSequence. Vì nó được bao gồm trong gói java.langnên không cần phải nhập.
 Lớp String trong Java là lớp cuối cùng và không thể có con.
