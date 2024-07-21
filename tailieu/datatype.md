@@ -1,6 +1,8 @@
 # Datatype
 
-*** Java là một ngôn ngữ được định kiểu tĩnh. Cơ sở của bất kỳ ngôn ngữ lập trình nào là các kiểu dữ liệu và toán tử của nó. Java đi kèm với một tập hợp phong phú của cả kiểu dữ liệu và toán tử, điều này làm cho nó phù hợp với bất kỳ kiểu lập trình nào. Có hai loại kiểu dữ liệu trong Java: *** 
+***
+Java là một ngôn ngữ được định kiểu tĩnh. Cơ sở của bất kỳ ngôn ngữ lập trình nào là các kiểu dữ liệu và toán tử của nó. Java đi kèm với một tập hợp phong phú của cả kiểu dữ liệu và toán tử, điều này làm cho nó phù hợp với bất kỳ kiểu lập trình nào. Có hai loại kiểu dữ liệu trong Java:
+*** 
 
 ## 1. Các kiểu dữ liệu nguyên thủy
 
